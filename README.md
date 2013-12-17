@@ -4,27 +4,27 @@ roambi-script
 RoambiScript is a command line interface to the Roambi API Java Client.  It allows the user another way to invoke api calls to Roambi from the terminal.
 
 Requirements:
-roambi-api-cli.jar
-Roambi account (credentials and account)
-Roambi API Client information
-Java
+* roambi-api-cli.jar
+* Roambi account (credentials and account)
+* Roambi API Client information
+* Java
 
 The client supports the following functions:
 
-create - upload a new source file to the library
-update - update an existing source file in the library
-refresh - create a new document (RBI) with a template and source file
+* create - upload a new source file to the library
+* update - update an existing source file in the library
+* refresh - create a new document (RBI) with a template and source file
 
 
 Account Properties
 You need to contain your account and client info in a (plain text) .properties file.  Here is an example of the contents:
 
-server.url=https://api.roambi.com
-consumer.key=3d7c8sdf1316a8cd5bac0d87
-consumer.secret=73252asdfbc9e3291066df92756a62bbb760238d6
-redirect.uri=roambi-api://client.roambi.com/authorize
-username=roambi@roambi.com
-password=mypassword
+* server.url=https://api.roambi.com
+* consumer.key=3d7c8sdf1316a8cd5bac0d87
+* consumer.secret=73252asdfbc9e3291066df92756a62bbb760238d6
+* redirect.uri=roambi-api://client.roambi.com/authorize
+* username=roambi@roambi.com
+* password=mypassword
 
 You pass this to the jar using the -props option:
 

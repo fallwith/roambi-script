@@ -23,7 +23,7 @@ You need to contain your account and client info in a (plain text) .properties f
 * consumer.key=3d7c8sdf1316a8cd5bac0d87
 * consumer.secret=73252asdfbc9e3291066df92756a62bbb760238d6
 * redirect.uri=roambi-api://client.roambi.com/authorize
-* username=roambi@roambi.com
+* username=someone@yourdomain.com
 * password=mypassword
 
 You pass this to the jar using the -props option:

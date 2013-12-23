@@ -9,6 +9,24 @@ Requirements:
 * Roambi API Client information
 * Java
 
+You may compile the roambi-api-cli.jar manually in bash:
+
+    #!/bin/sh
+    cd /tmp/
+    git clone https://github.com/Roambi/roambi-java-sdk
+    cd roambi-java-sdk/roambi-api-java-client/
+    mvn package
+    _api_client_jar=${PWD}/target/api-client-0.0.1-SNAPSHOT.jar
+    mvn install:install-file -DgroupId=com.mellmo.roambi.api \
+    -DartifactId=api-client -Dversion=0.0.1-SNAPSHOT -Dfile=${_api_client_jar} -Dpackaging=jar
+    #_api_client_jar=/tmp/roambi-java-sdk/roambi-api-java-client/target/api-client-0.0.1-SNAPSHOT.jar
+    cd ../../
+    git clone https://github.com/Roambi/roambi-script
+    cd roambi-script/
+    mvn package
+
+
+
 The client supports the following functions:
 
 * create - upload a new source file to the library

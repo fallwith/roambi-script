@@ -26,6 +26,8 @@ You may compile the roambi-api-cli.jar manually in bash:
     mvn package
 
 
+Alternatively, you may download the previously compiled verion here:
+https://s3.amazonaws.com/roambi-api-downloads/roambi-script/latest/roambi-api-cli.jar
 
 The client supports the following functions:
 

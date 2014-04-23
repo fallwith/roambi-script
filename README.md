@@ -50,13 +50,16 @@ You pass this to the jar using the -props option:
 
 java -jar roambi-api-cli.jar -props=path/to/my/file.properties
 
+```
 Usage: <main class> [options] [command] [command options]
+
   Options:
-        --help
+    --help
        Shows help
        Default: false
     -props
        Property file location
+
   Commands:
     update      Upload and update a file in the Roambi Repository
       Usage: update [options]
@@ -139,7 +142,7 @@ Usage: <main class> [options] [command] [command options]
         Options:
               --folder
              folder to be deleted
-
+```
 
 Notes
 All RFS Paths should be prepended with “/”.  This is a hack to differentiate them from UIDs.

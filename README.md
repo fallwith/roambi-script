@@ -57,59 +57,30 @@ Usage: <main class> [options] [command] [command options]
        Default: false
     -props
        Property file location
-
   Commands:
+    update      Upload and update a file in the Roambi Repository
+      Usage: update [options]
+        Options:
+              --file
+             locale file you with to upload
+              --target
+             target file uid
+
+    delete      Delete a file in the Roambi Repository
+      Usage: delete [options]
+        Options:
+              --file
+             file to be deleted
 
     mkdir      Create a folder in the Roambi Repository
       Usage: mkdir [options]
         Options:
               --folder
              parent folder
+              --permission
+             set permissions for folder
               --title
              title of the new folder
-
-    rmdir      Delete a folder in the Roambi Repository
-      Usage: rmdir [options]
-        Options:
-              --folder
-             folder to be deleted
-
-    create      Upload and create a file in the Roambi Repository
-       sage: create [options]
-        Options:
-              --file
-             locale file you with to upload
-              --folder
-             remote folder destination
-              --title
-             title of the new file
-
-    addPermission      add permissions to a file
-      Usage: addPermission [options]
-        Options:
-              --groupIds
-             group ids
-              --target
-             target file
-              --userIds
-             user ids
-
-    refresh      Refresh a Roambi document
-      Usage: refresh [options]
-        Options:
-              --folder
-             remote folder destination
-              --source
-             remote source file
-              --template
-             template rbi
-              --title
-             title of the new document
-
-    delete      Usage: delete [options]
-        Options:
-              --file
-             file to be deleted
 
     removePermission      remove permissions to a file
       Usage: removePermission [options]
@@ -121,13 +92,53 @@ Usage: <main class> [options] [command] [command options]
               --userIds
              user ids
 
- update      Upload and update a file in the Roambi Repository
-      Usage: update [options]
+    publish      Refresh a Roambi document
+      Usage: publish [options]
+        Options:
+              --folder
+             remote folder destination
+              --permission
+             set permissions for new document
+              --source
+             remote source file
+              --template
+             template rbi
+              --title
+             title of the new document
+
+    configure      Bootstrap a the client .properties file
+      Usage: configure [options]
+
+    upload      Upload and create a file in the Roambi Repository
+      Usage: upload [options]
         Options:
               --file
              locale file you with to upload
+              --folder
+             remote folder destination
+              --permission
+             set permissions for new file
+              --title
+             title of the new file
+
+    addPermission      add permissions to a file
+      Usage: addPermission [options]
+        Options:
+              --access
+             'view' or 'publish'
+             Default: view
+              --groupIds
+             group ids
               --target
-             target file uid
+             target file
+              --userIds
+             user ids
+
+    rmdir      Delete a folder in the Roambi Repository
+      Usage: rmdir [options]
+        Options:
+              --folder
+             folder to be deleted
 
 
 Notes
